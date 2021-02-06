@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+}
+
+.navbar {
+  background: rgb(251, 231, 5);
+  background: linear-gradient(
+    180deg,
+    rgba(251, 231, 5, 1) 0%,
+    rgba(249, 250, 18, 0.9026961126247374) 52%,
+    rgba(255, 252, 0, 0.15479695296087181) 100%
+  );
+}
+
+.start {
+  background: rgb(23, 251, 5);
+  background: linear-gradient(
+    180deg,
+    rgba(23, 251, 5, 1) 0%,
+    rgba(48, 244, 47, 0.9026961126247374) 52%,
+    rgba(87, 255, 64, 0.15479695296087181) 100%
+  );
+  color: rgb(14, 112, 47);
+}
+
+.default {
+  background-color: blueviolet;
+  /* border-color: rgb(233, 0, 0); */
+  /* border-width: 1rem; */
+  min-width: 100px;
+  min-height: 100px;
+  font-size: 3rem;
+  color: aliceblue;
+}
+
+.card {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+}
