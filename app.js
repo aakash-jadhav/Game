@@ -13,12 +13,12 @@ $(".start").click(function () {
 });
 
 //click on purple blocks
-$(".default").click(function (e) {
+$(".default").click(function () {
   $(this).removeClass("default");
   $(this).html(currentPlayer ? "O" : "X");
   $(this).addClass(currentPlayer ? "yellow" : "red");
   $(this).css("pointer-events", "none");
-  //$(this).attr("disabled", true);
+
   togglePlayer();
 });
 
