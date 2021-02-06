@@ -22,19 +22,30 @@
   );
   color: rgb(14, 112, 47);
 }
-
-.default {
-  background-color: blueviolet;
-  /* border-color: rgb(233, 0, 0); */
-  /* border-width: 1rem; */
+.block {
   min-width: 100px;
   min-height: 100px;
   font-size: 3rem;
+}
+.default {
+  background-color: blueviolet;
   color: aliceblue;
 }
+.red {
+  background-color: red;
+  color: rgb(112, 21, 21);
+}
 
+.yellow {
+  background-color: #fbed10;
+  color: #7c6924;
+}
+.green {
+  background-color: rgb(110, 255, 42);
+  color: darkgreen;
+}
 .card {
-  background-color: aquamarine;
-  display: flex;
-  justify-content: center;
+  /* background-color: aquamarine; */
+  max-width: 500px;
+  margin: auto;
 }
