@@ -44,7 +44,12 @@
   color: darkgreen;
 }
 .card {
-  /* background-color: aquamarine; */
   max-width: 500px;
   margin: auto;
+}
+
+img {
+  position: absolute;
+  bottom: 0px;
+  z-index: -1;
 }
