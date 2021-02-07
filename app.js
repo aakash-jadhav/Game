@@ -7,10 +7,12 @@ $(".current").html("O");
 //new game
 $(".start").click(function () {
   currentPlayer = true;
-  $(".block").removeClass("yellow red");
-  $(".block").html("");
-  $(".block").addClass("default");
-  $(".block").css("pointer-events", "");
+  $(".block").removeClass("yellow red"); //eeset colors
+  $(".block").html(""); //reset values in blocks
+  $(".block").addClass("default"); //add purple color
+  $(".block").css("pointer-events", ""); //enable click
+  $(".alert").removeClass("alert-danger alert-success");
+  $(".alert").addClass("alert-warning");
   $("strong").html("Current player: <span class = current></span>");
   $(".current").html("O");
 });
@@ -39,6 +41,8 @@ function togglePlayer() {
 //update status after victory
 function updateStatus() {
   let winner = currentPlayer ? "O" : "X";
-  console.log("winner is ", winner);
-  $(".default").css("pointer-events", "none");
+  $("strong").html("The winner is " + winner);
+  $(".default").css("pointer-events", "none"); //disable click
+  $(".alert").removeClass("alert-warning");
+  $(".alert").addClass(currentPlayer ? "alert-success" : "alert-danger");
 }

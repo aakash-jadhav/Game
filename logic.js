@@ -22,6 +22,5 @@ export default function checkWinner(currentPlayer) {
 
 export function checkDraw() {
   if ($(".block").hasClass("default")) return;
-  console.log("Match draw");
-  $(".alert").html("The game is draw");
+  $(".alert").html("<strong>The game is draw</strong>");
 }
